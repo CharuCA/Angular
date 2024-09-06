@@ -1,0 +1,34 @@
+.food-detail-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #333; /* Consistent text color */
+}
+
+.food-detail-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.food-detail-container ul,
+.food-detail-container ol {
+  margin-left: 20px;
+  padding-left: 20px; /* Ensure consistent padding */
+  list-style-position: inside; /* Improve readability of lists */
+}
+
+.food-detail-container h2,
+.food-detail-container h3 {
+  color: #333;
+  margin-bottom: 10px; /* Add spacing after headings */
+}
+
+.food-detail-container p {
+  line-height: 1.6;
+  margin-bottom: 10px; /* Consistent spacing between paragraphs */
+}
+
+.food-detail-container strong {
+  color: #555; /* Slightly lighter color for emphasis */
+}

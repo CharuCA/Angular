@@ -1,0 +1,6 @@
+<app-search-bar [(query)]="searchQuery"></app-search-bar>
+<ul>
+  <li *ngFor="let food of foods | filter : searchQuery">
+    <a [routerLink]="['/foods', food.id]">{{ food.name }}</a>
+  </li>
+</ul>

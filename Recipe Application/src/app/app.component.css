@@ -1,0 +1,53 @@
+/* Global styles for the app */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #343a40; /* Set a base text color */
+}
+
+/* Headings */
+h1,
+h2,
+h3 {
+  color: #343a40;
+  margin-bottom: 20px; /* Consistent spacing below headings */
+}
+
+/* Links */
+a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transitions */
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #0056b3; /* Darker blue on hover */
+}
+
+/* Navigation styles */
+nav {
+  background-color: #343a40;
+  padding: 10px 20px;
+}
+
+nav a {
+  color: #f8f9fa;
+  margin-right: 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ced4da; /* Lighter gray on hover */
+}
+
+nav a.active {
+  color: #ffc107; /* Highlight active link */
+}
+
+/* Router outlet styles */
+router-outlet {
+  display: block;
+  padding: 20px;
+}

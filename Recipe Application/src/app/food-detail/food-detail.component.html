@@ -1,0 +1,19 @@
+<div *ngIf="food">
+  <h2>{{ food.name }}</h2>
+  <img [src]="food.image" alt="{{ food.name }}" />
+  <p><strong>Prep Time:</strong> {{ food.prepTimeMinutes }} minutes</p>
+  <p><strong>Cook Time:</strong> {{ food.cookTimeMinutes }} minutes</p>
+  <p><strong>Servings:</strong> {{ food.servings }}</p>
+  <p><strong>Difficulty:</strong> {{ food.difficulty }}</p>
+  <p><strong>Cuisine:</strong> {{ food.cuisine }}</p>
+  <p><strong>Calories per Serving:</strong> {{ food.caloriesPerServing }}</p>
+  <h3>Ingredients</h3>
+  <ul>
+    <li *ngFor="let ingredient of food.ingredients">{{ ingredient }}</li>
+  </ul>
+  <h3>Instructions</h3>
+  <ol>
+    <li *ngFor="let instruction of food.instructions">{{ instruction }}</li>
+  </ol>
+  <p><strong>Tags:</strong> {{ food.tags.join(', ') }}</p>
+</div>
